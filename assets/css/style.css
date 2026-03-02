@@ -1,0 +1,252 @@
+/* Skeuomorphic Base & Utilities */
+:root {
+  --sand-base: #f2e8c6;
+  --sage-primary: #5f8670;
+  --peach-accent: #e2c799;
+  /* Shadows based on Sand Base and Top-Left Lighting */
+  --shadow-dark: #d5cba9;
+  --highlight-light: #ffffff;
+}
+
+body {
+  background-color: var(--sand-base);
+  /* Subtle noise texture */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+.dark body {
+  --sand-base: #2a332d;
+  --shadow-dark: #1b221e;
+  --highlight-light: #3d4a41;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* Modular Console Layout Base (Outset/Convex) */
+.skeuo-raised {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.4),
+    rgba(0, 0, 0, 0.05)
+  );
+  background-color: var(--sand-base);
+  border-radius: 30px;
+  box-shadow:
+    12px 12px 24px var(--shadow-dark),
+    -12px -12px 24px var(--highlight-light),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.6);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Primary Buttons (The Physical Switches) */
+.skeuo-btn-primary {
+  background: linear-gradient(135deg, #6a957d, var(--sage-primary));
+  border-radius: 9999px;
+  box-shadow:
+    6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--highlight-light),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.skeuo-btn-primary:active {
+  transform: translateY(2px);
+  box-shadow:
+    2px 2px 4px var(--shadow-dark),
+    -2px -2px 4px var(--highlight-light),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Standard Buttons (Sand) */
+.skeuo-btn {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(0, 0, 0, 0.02)
+  );
+  background-color: var(--sand-base);
+  border-radius: 9999px;
+  box-shadow:
+    6px 6px 12px var(--shadow-dark),
+    -6px -6px 12px var(--highlight-light),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.7);
+  border-top: 1px solid white;
+  color: #334;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.skeuo-btn:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(0, 0, 0, 0.01)
+  );
+  background-color: var(--sand-base);
+  color: var(--sage-primary);
+  box-shadow:
+    6px 6px 15px var(--shadow-dark),
+    -6px -6px 15px var(--highlight-light),
+    inset 1px 1px 4px rgba(255, 255, 255, 0.9);
+}
+.skeuo-btn:active {
+  transform: translateY(2px);
+  box-shadow:
+    2px 2px 4px var(--shadow-dark),
+    -2px -2px 4px var(--highlight-light),
+    inset 3px 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Highlighted Button (For CTAs and important elements) */
+.skeuo-btn-highlight {
+  background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(0,0,0,0.01));
+  background-color: var(--sand-base);
+  border-radius: 9999px;
+  box-shadow:
+    6px 6px 14px var(--shadow-dark),
+    -6px -6px 14px var(--highlight-light),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9);
+  border-top: 1px solid white;
+  border-bottom: 2px solid var(--sage-primary);
+  color: var(--sage-primary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.skeuo-btn-highlight:hover {
+  background: linear-gradient(135deg, #ffffff, var(--sand-base));
+  box-shadow:
+    8px 8px 18px var(--shadow-dark),
+    -8px -8px 18px var(--highlight-light),
+    inset 2px 2px 5px rgba(255, 255, 255, 1),
+    0 5px 15px rgba(95, 134, 112, 0.15); /* Soft Sage Glow */
+  transform: translateY(-2px);
+  color: #4a6a58;
+}
+.skeuo-btn-highlight:active {
+  transform: translateY(2px);
+  box-shadow:
+    2px 2px 4px var(--shadow-dark),
+    -2px -2px 4px var(--highlight-light),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pressed / Sunken (Concave) for Inputs, Image Wells */
+.skeuo-pressed {
+  background: var(--sand-base);
+  border-radius: 20px;
+  box-shadow:
+    inset 8px 8px 16px var(--shadow-dark),
+    inset -8px -8px 16px var(--highlight-light);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Text Styles */
+.skeuo-text-engraved {
+  color: #7b735c;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+.skeuo-text-raised {
+  color: var(--sage-primary);
+  text-shadow:
+    -1px -1px 0px rgba(255, 255, 255, 0.6),
+    1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide Scrollbar Utility */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Image popout effect within sunken container */
+.skeuo-img-outset {
+  box-shadow:
+    6px 6px 12px rgba(0, 0, 0, 0.15),
+    -2px -2px 8px rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+}
+
+/* Dark mode overrides for Skeuo */
+.dark .skeuo-raised {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(0, 0, 0, 0.2)
+  );
+  background-color: var(--sand-base);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-left: 1px solid rgba(255, 255, 255, 0.02);
+}
+.dark .skeuo-btn {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(0, 0, 0, 0.15)
+  );
+  background-color: var(--sand-base);
+  color: #d1d5db;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dark .skeuo-btn:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(0, 0, 0, 0.1)
+  );
+  background-color: var(--sand-base);
+  color: var(--peach-accent);
+}
+.dark .skeuo-pressed {
+  box-shadow:
+    inset 8px 8px 16px #1b221e,
+    inset -8px -8px 16px #3d4a41;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-right: 1px solid rgba(255, 255, 255, 0.02);
+}
+.dark .skeuo-text-engraved {
+  color: #8da495;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.05);
+}
+.dark .skeuo-text-raised {
+  color: #6a957d;
+  text-shadow:
+    -1px -1px 0px rgba(255, 255, 255, 0.05),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.dark .skeuo-btn-highlight {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.2));
+  border-bottom: 2px solid var(--peach-accent);
+  color: var(--peach-accent);
+  box-shadow:
+    6px 6px 14px var(--shadow-dark),
+    -6px -6px 14px var(--highlight-light),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.1);
+}
+.dark .skeuo-btn-highlight:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.15));
+  box-shadow:
+    8px 8px 18px var(--shadow-dark),
+    -8px -8px 18px var(--highlight-light),
+    inset 1px 1px 3px rgba(255, 255, 255, 0.2),
+    0 5px 15px rgba(226, 199, 153, 0.15); /* Soft Peach Glow */
+  color: #f0deb8;
+}
