@@ -1,86 +1,119 @@
-# Farhan Kholid - UI/UX & Graphic Designer Portfolio
+# Portfolio Nur Faizah Syam
 
-> A highly curated, single-page landing portfolio showcasing design fidelity, engineering precision, and a strictly enforced **Claymorphism** aesthetic. Built for speed, elegance, and pixel-perfect responsiveness.
+**Brand Strategy Leader | 9+ Years in Social Media Ads (Meta, TikTok), E-commerce & Market Expansion.**  
+_"Ex-Singapore & Indonesia Markets Specialist."_
 
-<div align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Vanilla_JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Vanilla JS" />
-</div>
+**Pronouns:** She / Her  
+**Location:** Jakarta, Indonesia
 
-<br />
+## 🌟 About Me
 
----
+Experienced Social Media Marketing Specialist. Skilled in ESL, Data Analysis, and Music Composition. Strong marketing professional with a Bachelor of Arts focused in Business Management and Marketing.
 
-## 🌟 Overview
+### Core Focus
 
-This repository houses the pure static frontend code for my 2026 professional design portfolio. Moving away from standard flat design and heavy JS frameworks, this project embraces **Claymorphism**—a modern UI trend characterized by soft, fluffy 3D shapes, dual inner shadows, and floating, touch-friendly interfaces.
-
-The architecture is built completely on **HTML5** and **Tailwind CSS (via CDN)**, ensuring that there are zero heavy node_modules dependencies, zero build steps required to fire it up, and lightning-fast deployment capabilities.
-
----
-
-## ✨ Key Features
-
-- **The Claymorphism Design System**: Custom-written CSS algorithms to extend Tailwind's utility classes. Generating flawless `.clay-card`, `.clay-btn`, and `.clay-inset` shadows specifically calibrated against a `bg-[#F0F5F9]` canvas.
-- **Single-Page Flow**: A seamless `scroll-smooth` vertical layout engineered for an unblocked and comfortable reading experience from Hero to Contact.
-- **Bento Grid Architecture**: Asymmetric, responsive `grid-cols-12` layouts utilized across the "About Me" and Project Showcase sections for maximum content density and visual hierarchy.
-- **Icon-Only Logic**: Removed redundant text lists in favor of a sleek, purely visual Devicon gallery for the Tech Stack and Design Tool sections to elevate the aesthetic.
-- **Built-in Lightbox**: A custom Vanilla JS modal logic to scale, examine, and view high-fidelity UI/UX and Graphic Design screenshots dynamically.
-- **Zero-Dependency Animations**: Elegant CSS-only micro-interactions, including continuous floating blobs (`@keyframes float`) and gentle scaling hover states.
+- Meta Ads
+- TikTok Ads
+- Market Expansion
+- Data Analysis
 
 ---
 
-## 🛠️ Built With
+## 💼 Professional Timeline
 
-- **Markup**: Semantic HTML5
-- **Styling Engine**: Tailwind CSS
-- **Custom CSS**: Vanilla CSS variables and keyframes exclusively for 3D shadowing algorithms.
-- **Interactivity**: Pure Vanilla JavaScript (DOM Manipulation for Lightbox)
-- **Typography**: Outfit & Syne (Google Fonts)
-- **Assets**: Devicon (SVGs) & SimpleIcons
+### PT Putri Samara Satu
 
----
+**Managing Director** _(Jan 2020 – Present)_  
+Led and managed marketing teams, providing guidance and performance management. Oversaw digital marketing, traditional advertising, PR, and content marketing. Collaborated with cross-functional teams to align marketing efforts with company objectives.
+_Key Expertise: Marketing Strategy, Leadership, Brand Management_
 
-## 🚀 Quick Start / Deployment
+### Farhan Surya Indah
 
-Since this project avoids Webpack, Vite, or Next.js build steps, running it is instantaneous.
+**Digital Marketing Manager** _(Sep 2016 – Dec 2020)_  
+Managed multi-channel campaigns (SEO, SEM, Social Media, Email Marketing). Analyzed ROI and campaign performance using Google Analytics and Facebook Insights. Managed digital marketing budgets and cross-functional team collaborations.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/portfolio-farhan-2026.git
-   ```
-2. **Open locally:**  
-   Simply open the `index.html` file in any modern web browser. No local server is strictly required, though you may use an extension like VS Code's _Live Server_ for hot-reloading.
-
-3. **Deploying (e.g., Vercel, Netlify, GitHub Pages):**  
-   Drag-and-drop the root folder directly into your hosting provider of choice. The site is production-ready.
+**Reservations Ticketing Agent** _(Aug 2011 – Jan 2014)_  
+Managed secure payments and ticket issuance, achieving high accuracy in utilizing complex industry software (GDS & Sabre systems).
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Skills & Tools
 
-```text
-├── index.html          # The Main Single-Page Application Layout
-├── assets/             # Local Imagery
-│   └── img/
-│       ├── cu24/       # CITEUP 2024 Assets
-│       ├── cu25/       # CITEUP 2025 Assets
-│       ├── fsi/        # FSI Project Assets
-│       └── ...         # UI/UX Screenshots
-└── README.md
-```
+### 📈 Marketing & Web Tools
+
+- Google Analytics
+- Meta Ads
+- Excel
+- HubSpot
+- WordPress
+- WooCommerce
+
+### ⚙️ Platforms & Systems
+
+- TikTok Ads
+- SEO / SEM
+- GDS & Sabre
+
+### 🤝 Expertise
+
+- Market Expansion
+- E-Commerce Strategy
+- Cross-functional Team Leadership
 
 ---
 
-## 🎨 Design Philosophy: Why Claymorphism?
+## 🎓 Education
 
-Claymorphism bridges the gap between the hyper-realistic _Neumorphism_ trends and the standard _Flat Design_. By combining two carefully calculated inner shadows (one dark top-left, one light bottom-right) against a prominent exterior drop-shadow, elements appear as if they are inflated, tangible objects floating slightly above the canvas. It invites interaction, feels incredibly friendly, and proves that high-end design doesn't always require complex WebGL setups.
+**University of Sunderland**  
+BA, Business Management & Marketing _(2015-2016)_
+
+**MDIS (Singapore)**  
+Adv. Diploma, Accounting & Business _(2014)_
 
 ---
 
-<div align="center">
-  <i>Designed and hand-coded by Farhan Kholid</i>
-  <br>
-  <b>2026</b>
-</div>
+## 💻 UI/UX Engineering Projects
+
+_Digital products molded with precision, empathy, and logic._
+
+### 01. FSI BOARD
+
+Umrah and Hajj Management System Dashboard for PT Farhan Surya Indah. Built to monitor pilgrim data and daily operations efficiently in real-time.
+
+- **Tech Stack:** Laravel, Tailwind CSS
+
+### 02. Pilgrim Tracker
+
+Mobile app prototype specifically optimizing Tour & Travel services through real-time pilgrim tracking. Features live interactive maps and comprehensive travel itinerary discovery.
+
+- **Tech Stack:** Figma
+
+### 03. Kalcer.ID
+
+A comprehensive cultural hub bridging fragmented heritage sites into one unified platform. Features dynamic event discovery wrapped in a smooth, responsive UI.
+
+- **Tech Stack:** Laravel, Livewire, Breeze, Tailwind CSS
+
+### 04. LuminaVisa
+
+A mobile app aimed at simplifying opaque visa processes. Broken down into bite-sized steps with clear visual feedback to ease traveler anxiety.
+
+- **Tech Stack:** Laravel, Livewire
+
+### 05. Mono Stock
+
+Designed a monochromatic, high-contrast dashboard to reduce decision fatigue for traders. The clean layout prioritizes rapid market scanning without cognitive overload.
+
+- **Tech Stack:** HTML5, CSS3, JavaScript
+
+---
+
+## Let's Connect
+
+> Have a project in mind? Let's mold it together.
+
+- LinkedIn
+- GitHub
+- Gmail
+
+_(C) 2026 Nur Faizah._
